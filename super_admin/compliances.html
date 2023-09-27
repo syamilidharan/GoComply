@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                    <li class="govuk-header__navigation-item ">
+                        <strong>Super Admin Mode</strong>
+                    </li>
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link govuk-tag_wrap" href="#2">
+                          <strong class="govuk-tag">182</strong>
+                          <svg id="bell-notification" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="Group" transform="translate(4 3)"><path id="Path" d="M0,0V.366A2.292,2.292,0,0,0,2.292,2.657h0A2.292,2.292,0,0,0,4.584.365V0" transform="translate(5.708 15.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M3.666,2.751V1.833A1.833,1.833,0,0,0,1.833,0h0A1.833,1.833,0,0,0,0,1.833v.918" transform="translate(6.167)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M1.813,4.531h0A4.531,4.531,0,0,1,6.344,0H8.157a4.531,4.531,0,0,1,4.531,4.531h0v2.8a2,2,0,0,0,.586,1.414l.641.641A2,2,0,0,1,14.5,10.8h0a1.89,1.89,0,0,1-1.89,1.89H1.89A1.89,1.89,0,0,1,0,10.8H0A2,2,0,0,1,.586,9.383l.641-.641a2,2,0,0,0,.586-1.414Z" transform="translate(0.75 2.657)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g><path id="Path-4" data-name="Path" d="M0,0H24V24H0Z" fill="none"/></svg>
+                        </a>
+                    </li>
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="settings.html">
+                          <svg id="settings.10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M4.609.791a2.7,2.7,0,1,1-3.818,0,2.7,2.7,0,0,1,3.818,0" transform="translate(9.3 9.3)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M1.869,9a7.138,7.138,0,0,0,.063.882L.344,11.124A.9.9,0,0,0,.12,12.28l1.412,2.443a.9.9,0,0,0,1.112.384l1.422-.571a.912.912,0,0,1,.846.1,6.863,6.863,0,0,0,.684.4.916.916,0,0,1,.509.682l.217,1.513A.9.9,0,0,0,7.21,18h2.817a.9.9,0,0,0,.888-.77l.217-1.512a.918.918,0,0,1,.512-.683,6.6,6.6,0,0,0,.681-.4.915.915,0,0,1,.85-.1l1.419.57a.9.9,0,0,0,1.112-.384l1.412-2.443a.9.9,0,0,0-.224-1.156L15.306,9.882A7.138,7.138,0,0,0,15.369,9a7.138,7.138,0,0,0-.063-.882l1.588-1.242a.9.9,0,0,0,.224-1.156L15.706,3.277a.9.9,0,0,0-1.112-.384l-1.419.57a.918.918,0,0,1-.85-.1,6.6,6.6,0,0,0-.681-.4.918.918,0,0,1-.512-.683L10.916.77A.9.9,0,0,0,10.028,0H7.211a.9.9,0,0,0-.888.77L6.105,2.284a.92.92,0,0,1-.509.682,7.062,7.062,0,0,0-.684.4.917.917,0,0,1-.847.1L2.644,2.893a.9.9,0,0,0-1.112.384L.12,5.72A.9.9,0,0,0,.344,6.876L1.932,8.118A7.138,7.138,0,0,0,1.869,9Z" transform="translate(3.381 3)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <nav class="app-navigation govuk-clearfix">
+        <ul class="app-navigation__list app-width-container">
+          
+          <li class="app-navigation__list-item">
+            <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="dashboard.html" data-topnav="Get started">Dashboard</a>
+          </li>
+          
+          <li class="app-navigation__list-item  app-navigation__list-item--current">
+            <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="compliances.html" data-topnav="Styles">Compliances</a>
+          </li>
+          
+          <li class="app-navigation__list-item">
+            <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="requests.html" data-topnav="Components">Requests</a>
+          </li>
+          
+          <li class="app-navigation__list-item">
+            <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="subscriptions.html" data-topnav="Patterns">Subscriptions</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div class="govuk-clearfix appmain-content white_head_section">
+        <div class="app-width-container app-prose-scope">
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-full head_with_button">
+              <h2 class="inner_head">Compliances</h2> 
+              <a href="compliances_add.html" class="govuk-button blue_button" data-module="govuk-button">Add Compliance</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <div class="govuk-clearfix appmain-content section_min_padding_bottom">
+        <div class="app-width-container app-prose-scope  ">
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-full">
+              <ul class="select_list light_blue_app_content select_list_wrap">
+                <li>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Category
+                    </label>
+                    <div class="select_wrapper">
+                      <select class="govuk-select select_248" id="sort" name="sort">
+                        <option value="" selected>Choose</option>
+                        <option value="">Compliance Category 1</option>
+                        <option value="">Compliance Category 2</option>
+                        <option value="">Compliance Category 3</option>
+                        <option value="">Compliance Category 4</option>                      
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Frequency
+                    </label>
+                    <div class="select_wrapper">
+                      <select class="govuk-select select_160" id="sort" name="sort">
+                        <option value="" selected>Choose</option>
+                        <option value="">one time</option>
+                        <option value="">recurring</option>
+                        <option value="">triggered</option>                                           
+                      </select>  
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      State
+                    </label>
+                    <div class="select_wrapper">
+                      <select class="govuk-select " id="sort" name="sort">
+                        <option value="" selected>Choose</option>
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Arunachal Pradesh</option>
+                        <option value="">Asom (Assam)</option>
+                        <option value="">Bihar</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Kerala</option>
+                        <option value="">Chhattisgarh</option>
+                        <option value="">Uttar Pradesh</option>
+                        <option value="">Goa</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Haryana</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Jammu & Kashmir</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">West Bengal</option>
+                        <option value="">Madhya Pradesh</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Manipur</option>
+                        <option value="">Meghalaya</option>
+                        <option value="">Mizoram</option>
+                        <option value="">Nagaland</option>
+                        <option value="">Orissa</option>
+                        <option value="">Punjab</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Telangana</option>
+                        <option value="">Tripura</option>
+                        <option value="">Uttarakhand</option> 
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Severity
+                    </label>
+                    <div class="select_wrapper">
+                      <select class="govuk-select" id="sort" name="sort">
+                        <option value="" selected>Choose</option>
+                        <option value="">low</option>
+                        <option value="">medium</option>
+                        <option value="">high</option>                                           
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="govuk-form-group">
+                    <button class="govuk-button blue_button" data-module="govuk-button">Apply Filters</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="govuk-form-group">
+                    <button class="govuk-button white_button" data-module="govuk-button">Clear All Filters</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-clearfix appmain-content white_head_section">
+        <div class="app-width-container app-prose-scope">
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-full">
+              <table class="govuk-table compliance_table sort_table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header"><span>Category</span></th>
+                    <th scope="col" class="govuk-table__header"><span>Compliance Name</span></th>
+                    <th scope="col" class="govuk-table__header"><span>For Company Type</span></th>
+                    <th scope="col" class="govuk-table__header"><span>State</span></th>
+                    <th scope="col" class="govuk-table__header"><span>Severity</span></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">LLPs, Partnership or Proprietorship Firms</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">Alls</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">OPC and Private Limited Companies</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">Limited Companies</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">LLPs, Partnership or Proprietorship Firms</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">LLPs, Partnership or Proprietorship Firms</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">GST</td>
+                    <td class="govuk-table__cell">Compliancename goes here on single tex...</td>
+                    <td class="govuk-table__cell">Limited Companies</td>
+                    <td class="govuk-table__cell">UP</td>
+                    <td class="govuk-table__cell">High</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!--/row-->
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-one-half">
+              <div class="govuk-form-group convenience_table_sort">
+                <div class="select_wrapper">
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="" selected>10</option>
+                    <option value="">20</option>
+                    <option value="">50</option>
+                    <option value="">100</option>                                           
+                  </select>  
+                </div>              
+                <label class="govuk-label" for="sort">
+                    Entries per page
+                </label>
+              </div>
+            </div>
+
+
+            <div class="govuk-grid-column-one-half">
+                <div class="pagination">
+                  <ul>
+                    <li>
+                      <a href="#" >&laquo;</a>
+                    </li>
+
+                    <li>
+                      <a href="#" >1</a>
+                    </li>
+                    <li>
+                      <a href="#" >2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="active">3</a>
+                    </li>
+                    <li>
+                      <a href="#" >4</a>
+                    </li>
+                    <li>
+                      <a href="#" >5</a>
+                    </li>
+                    <li>
+                      <a href="#" >&raquo;</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div><!--/row-->
+        </div>
+      </div>
+
+
+
+
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+  </body>
+</html>

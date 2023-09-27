@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+          </div>          
+        </div>
+      </header>     
+
+      <div class="govuk-clearfix appmain-content pt-0">
+        <div class="app-width-container app-prose-scope">          
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-one-quarter pt-30"></div>
+            <div class="govuk-grid-column-one-half pt-30 pb-30">
+              <form action="#otp" method="post">
+                <fieldset class="govuk-fieldset add_compliance_form register_form">
+                  <h3 class="inner_head">Super User Register</h3>  
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">First Name
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">Last Name
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" >
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">Email
+                    </label>
+                    <div>
+                    <input class="govuk-input email_input" id="address-line-2" name="address-line-2" type="email"><span>@gocomply.in</span>
+                  </div>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">Mobile Number
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" >
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">Password
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="password" >
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">Confirm Password
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="password" >
+                  </div>             
+                  <div >
+                    <button type="submit" class="govuk-button blue_button" data-module="govuk-button">Register as Super User</button>
+                  </div>
+                  <div class="govuk-form-group">
+                    <a href="#" class="blue_link">I already have an account</a>
+                  </div>
+                </fieldset>
+            </div><!--col-1-->
+            <div class="govuk-grid-column-one-quarter pt-30 ">
+              
+            </div>
+            
+          </div><!--/row-->
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="otp" class="popup">
+      <a href="#" class="close">&times;</a>
+      <h2>OTP Authentication</h2>
+      <p>We've just sent you a code via SMS.</p>
+      <p>Enter it below to confirm your identity</p>
+      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+      <p>OTP Auth Codes expire in 5 minutes.</p>
+      <div class="govuk-form-group popup_btns">
+        <button class="govuk-button blue_button" data-module="govuk-button">Login</button>
+        <button class="govuk-button black_button button_right" data-module="govuk-button">Send New Code</button>
+      </div>
+    </div>
+    <a href="#" class="close-popup"></a>
+
+    <script src="../assets/javascripts/jquery.js"></script>
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+  </body>
+  </html>
+

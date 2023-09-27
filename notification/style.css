@@ -1,0 +1,139 @@
+/* 
+** Dashboard 
+*/
+.dashboard_menu .govuk-tabs__list{
+	background-color: #F3F2F1;
+}
+.light_blue_app_content{
+	background-color: #E7EFF7;
+}
+.subscription_box{
+	background-color: #fff;
+	padding: 16px 12px;
+}
+.subscription_box h2{
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.appmain-content{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.white_bg_section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.subscription_box_light_blue{
+	background-color: #E7EFF7;
+}
+
+/*
+** Compliances
+*/
+.white_head_section{
+	padding-bottom: 30px;
+}
+.white_head_section .head_with_button{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.select_list{
+	list-style: none !important;
+}
+.select_list li{
+
+}
+.select_list li .govuk-button{
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.select_list .govuk-form-group {
+    margin-bottom: 0px;
+}
+.select_list select{
+	min-width: 140px;
+	max-width: 190px;
+}
+.select_list_wrap{
+	padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+.govuk-table.compliance_table td{
+ 	font-size: 16px;
+}
+.compliance_table .govuk-table__header, .compliance_table .govuk-table__cell{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.pagination {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+}
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+}
+.pagination li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.pagination li a {
+	border: 1px solid #F3F2F1;
+    background-color: #F3F2F1;
+	color: #0B0C0C;
+	text-decoration: none;
+	display: inline-block;
+	transition: all .8s ease 0s;
+	height: 30px;
+    line-height: 30px;
+    margin: 0 3px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.pagination li a:hover {
+	background-color: #1D70B8;
+	color: white;
+}
+.pagination li a.active {
+	background-color: #1D70B8;
+	color: white;
+}
+.convenience_table_sort{
+	display: flex;
+    align-items: baseline;
+}
+.convenience_table_sort label{
+	padding-left: 10px;
+}
+
+@media (min-width: 768px){
+	.select_list{
+		display: flex;
+		margin-bottom: 0 !important;
+	}
+	.select_list li{
+		padding-right: 20px;
+	}
+}
+.mark_as_read{
+	background: #E8F1F8;
+}
+.notification_table{
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+.notification_table tbody tr{
+	cursor: pointer;
+}

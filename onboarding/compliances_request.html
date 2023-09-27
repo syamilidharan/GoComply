@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body on_boarding">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+            <span class="select_wrapper_2">
+              <select class="govuk-select head_company_list" id="sort" name="sort">
+                <option value="" >All</option>
+                <option value="" selected>Momentum Tech Ltd</option>
+                <option value="">Company 2</option>
+                <option value="">Company 3</option>
+                <option value="">Company 4</option>                      
+              </select>
+            </span>
+          </div>
+          
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                   
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="govuk-clearfix appmain-content white_head_section pt-0">
+        <div class="app-width-container app-prose-scope">
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-two-thirds pt-30 pr_80">
+              <h2 class="inner_head">Request Missing Compliance</h2>
+              <p>Please describe the compliance in detail that you would like to add and keep track of.</p>
+            
+              <fieldset class="govuk-fieldset add_compliance_form request_form">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                      Compliance Category                      
+                  </label>
+                  <div class="see_ex">
+                        <svg id="question" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M9,18H9A9,9,0,0,1,0,9H0A9,9,0,0,1,9,0H9a9,9,0,0,1,9,9h0A9,9,0,0,1,9,18Z" transform="translate(3 3)" fill="#0b0c0c" stroke="#0b0c0c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M2,5.417v-.25a1.873,1.873,0,0,1,1.011-1.6A1.837,1.837,0,0,0,4,2,2,2,0,0,0,0,2" transform="translate(10 7.833)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-4" data-name="Path" d="M.5.25A.25.25,0,1,0,.75.5.249.249,0,0,0,.5.25" transform="translate(11.5 15.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        <a href="#"><span>See example and description</span></a>
+                  </div>
+                  <div class="select_wrapper">
+                  <select class="govuk-select" id="sort" name="sort">
+                      <option value="" selected>Choose</option>
+                      <option value="">Compliance Category Name 1</option>
+                      <option value="">Compliance Category Name 2</option>
+                      <option value="">Compliance Category Name 3</option>
+                      <option value="">Compliance Category Name 4</option>                      
+                  </select>
+                </div>
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">Act Name
+                  </label>
+                  <div class="see_ex">
+                        <svg id="question" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M9,18H9A9,9,0,0,1,0,9H0A9,9,0,0,1,9,0H9a9,9,0,0,1,9,9h0A9,9,0,0,1,9,18Z" transform="translate(3 3)" fill="#0b0c0c" stroke="#0b0c0c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M2,5.417v-.25a1.873,1.873,0,0,1,1.011-1.6A1.837,1.837,0,0,0,4,2,2,2,0,0,0,0,2" transform="translate(10 7.833)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-4" data-name="Path" d="M.5.25A.25.25,0,1,0,.75.5.249.249,0,0,0,.5.25" transform="translate(11.5 15.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        <a href="#"><span>See example and description</span></a>
+                  </div>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                      Compliance Form Name
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                      How often this compliance will occur ?
+                  </label>
+                  <div class="select_wrapper">
+                  <select class="govuk-select" id="sort" name="sort">
+                      <option value="" selected>Choose</option>
+                      <option value="">one time</option>
+                      <option value="">recurring</option>
+                      <option value="">triggered</option>                                           
+                  </select>
+                  </div>    
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">Comments (optional)
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+              
+              <div class="btn_group pt-30">
+                <div class="btn_group_1">                  
+                  <button class="govuk-button blue_button" data-module="govuk-button">Send Request</button>                  
+                  <button class="govuk-button black_button button_right" data-module="govuk-button">Cancel</button>
+                </div>
+              </div>
+            </fieldset>
+            </div><!--col-1-->
+            <div class="govuk-grid-column-one-third ">
+              
+            </div>
+          </div><!--/row-->
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    <script src="../assets/javascripts/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+    <script type="text/javascript">
+      $('#tabs').tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+    </script>
+  </body>
+</html>

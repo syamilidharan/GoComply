@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body on_boarding">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+            <span class="select_wrapper_2">
+              <select class="govuk-select head_company_list" id="sort" name="sort">
+                <option value="" >All</option>
+                <option value="" selected>Momentum Tech Ltd</option>
+                <option value="">Company 2</option>
+                <option value="">Company 3</option>
+                <option value="">Company 4</option>                      
+              </select>
+            </span>
+          </div>
+          
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                   
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="govuk-clearfix appmain-content white_head_section pt-0 pb-0">
+        <div class="new-width-container app-prose-scope app-pane__body">
+          <div class="app-pane__subnav ">
+            <nav class="app-subnav">          
+              <ul class="app-subnav__section">              
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="welcome.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Welcome</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Profile</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="users.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Manage Users</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="gst.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> GST Details</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="business_info.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Business Info</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="company_docs.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Company Docs</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="kyc.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> KYC</a>
+                </li>
+                <li class="app-subnav__section-item app-subnav__section-item--current">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="compliances.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#1D70B8"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Compliances</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="notifications.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#f47738"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Notifications</a>
+                </li>
+                <hr>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="billing.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Billing</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="subscription.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Subscription</a>
+                </li>
+              </ul>     
+            </nav>            
+          </div><!--/app-pane__subnav-->   
+          <div class="app-pane__content">
+            <main id="main-content" class="app-content" role="main">
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-full  pt-30 pr_80">
+                  <h3 class="sub_head">Account Setup</h3>
+                  <div class=" head_with_button">
+                    <h2 class="inner_head">Compliances</h2> 
+                  </div>
+                  <p>Update all KYC details of the directors, partners or proprietors.Review all compliances that will be covered. You can always get back and make changes.</p>
+                  <h4>Review Compliances</h4>
+                  <p>Check all that apply to you - some have been prechecked and cannot be changed as they are mandatory based on the information provided.</p>
+                </div>
+              </div>
+              <div class="govuk-grid-row m-0 users_list_link">
+                <div class="govuk-grid-column-two-thirds pt-30">       
+                  
+                  <div id="tabs">
+                    <ul class="nav nav-tabs reviewTablist" role="tablist">
+                      <li class="nav-item">
+                        <a id="tab-A" href="#pane-A" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">4</strong> GST
+                        </a>
+                      </li>
+                      <li class="nav-item ui-tabs-active" aria-selected="true">
+                        <a id="tab-B" href="#pane-B" class="nav-link " data-toggle="tab" role="tab" >
+                          <strong class="govuk-tag">3</strong> Income Tax &amp; TDS
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-C" href="#pane-C" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">8</strong> ESI
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-D" href="#pane-D" class="nav-link" data-toggle="tab" role="tab">
+                          EPF
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-E" href="#pane-E" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">2</strong> ROC
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-F" href="#pane-F" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">1</strong> BIS
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-G" href="#pane-G" class="nav-link" data-toggle="tab" role="tab">
+                          POSH
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-H" href="#pane-H" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">3</strong> MSME
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-I" href="#pane-I" class="nav-link" data-toggle="tab" role="tab">
+                          Factories Act
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-J" href="#pane-J" class="nav-link" data-toggle="tab" role="tab">
+                          FSSAI
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-K" href="#pane-K" class="nav-link" data-toggle="tab" role="tab">
+                          <strong class="govuk-tag">4</strong> Shop &amp; Establishment Act
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="tab-L" href="#pane-L" class="nav-link" data-toggle="tab" role="tab">
+                          Professional Tax
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="content" class="tab-content  collapseTab reviewTabcontent" role="tablist">
+
+                    <div id="pane-A" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-A">
+                      
+                      <div id="collapse-A" class="collapse show" role="tabpanel" aria-labelledby="heading-A">
+                        <div class="card-body">
+                          [Tab content A]
+                        </div>
+                      </div>
+                    </div><!--pane-A-->
+
+                    <div id="pane-B" class="card tab-pane  scrollableTabs scrollbar fade show  active" role="tabpanel" aria-labelledby="tab-B">
+                      
+                      <div id="collapse-B" class="collapse" role="tabpanel" aria-labelledby="heading-B">
+                        <div class="card-body">
+                          <form>
+                            <div class="govuk-checkboxes">
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check1" checked="" class="govuk-checkboxes__input">
+                                <label for="check1" class="govuk-label govuk-checkboxes__label">15CA</label>
+                              </div>
+                              <div class="govuk-checkboxes__item disabledCheck">
+                                <input type="checkbox" id="check2" checked="" disabled="" class="govuk-checkboxes__input">
+                                <label for="check2" class="govuk-label govuk-checkboxes__label">15CB</label>
+                              </div>
+                              <div class="govuk-checkboxes__item disabledCheck">
+                                <input type="checkbox" id="check3" checked="" disabled="" class="govuk-checkboxes__input">
+                                <label for="check3" class="govuk-label govuk-checkboxes__label">15CC</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check4" class="govuk-checkboxes__input">
+                                <label for="check4" class="govuk-label govuk-checkboxes__label">20ED</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check5" class="govuk-checkboxes__input">
+                                <label for="check5" class="govuk-label govuk-checkboxes__label">20ED-30MD</label>
+                              </div>
+                              <div class="govuk-checkboxes__item" >
+                                <input type="checkbox" id="check6" class="govuk-checkboxes__input">
+                                <label for="check6" class="govuk-label govuk-checkboxes__label">20ED</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check7" class="govuk-checkboxes__input">
+                                <label for="check7" class="govuk-label govuk-checkboxes__label">21ED</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check8" class="govuk-checkboxes__input">
+                                <label for="check8" class="govuk-label govuk-checkboxes__label">25FG</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check9" class="govuk-checkboxes__input">
+                                <label for="check9" class="govuk-label govuk-checkboxes__label">30MD</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check10" class="govuk-checkboxes__input">
+                                <label for="check10" class="govuk-label govuk-checkboxes__label">43MT</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check11" class="govuk-checkboxes__input">
+                                <label for="check11" class="govuk-label govuk-checkboxes__label">41AB</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check12" class="govuk-checkboxes__input">
+                                <label for="check12" class="govuk-label govuk-checkboxes__label">41AC</label>
+                              </div>
+                              <div class="govuk-checkboxes__item">
+                                <input type="checkbox" id="check13" class="govuk-checkboxes__input">
+                                <label for="check13" class="govuk-label govuk-checkboxes__label">15CA</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div><!--pane-B-->
+
+
+                    <div id="pane-C" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-C">
+                      
+                      <div id="collapse-C" class="collapse" role="tabpanel" aria-labelledby="heading-C">
+                        <div class="card-body">
+                          [Tab content C]
+                        </div>
+                      </div>
+                    </div><!--pane-C-->
+
+                    <div id="pane-D" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-D">
+                      
+                      <div id="collapse-D" class="collapse" role="tabpanel" aria-labelledby="heading-D">
+                        <div class="card-body">
+                          [Tab content D]
+                        </div>
+                      </div>
+                    </div><!--pane-D-->
+
+                    <div id="pane-E" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-E">
+                      
+                      <div id="collapse-E" class="collapse" role="tabpanel" aria-labelledby="heading-E">
+                        <div class="card-body">
+                          [Tab content E]
+                        </div>
+                      </div>
+                    </div><!--pane-E-->
+
+                    <div id="pane-F" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-F">
+                      
+                      <div id="collapse-F" class="collapse" role="tabpanel" aria-labelledby="heading-F">
+                        <div class="card-body">
+                          [Tab content F]
+                        </div>
+                      </div>
+                    </div><!--pane-F-->
+
+                    <div id="pane-G" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-G">
+                      
+                      <div id="collapse-G" class="collapse" role="tabpanel" aria-labelledby="heading-G">
+                        <div class="card-body">
+                          [Tab content G]
+                        </div>
+                      </div>
+                    </div><!--pane-G-->
+
+                    <div id="pane-H" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-H">
+                      
+                      <div id="collapse-H" class="collapse" role="tabpanel" aria-labelledby="heading-H">
+                        <div class="card-body">
+                          [Tab content H]
+                        </div>
+                      </div>
+                    </div><!--pane-H-->
+
+                    <div id="pane-I" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-I">
+                      
+                      <div id="collapse-I" class="collapse" role="tabpanel" aria-labelledby="heading-I">
+                        <div class="card-body">
+                          [Tab content I]
+                        </div>
+                      </div>
+                    </div><!--pane-I-->
+
+                    <div id="pane-J" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-J">
+                      
+                      <div id="collapse-J" class="collapse" role="tabpanel" aria-labelledby="heading-J">
+                        <div class="card-body">
+                          [Tab content J]
+                        </div>
+                      </div>
+                    </div><!--pane-J-->
+
+                    <div id="pane-K" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-K">
+                      
+                      <div id="collapse-K" class="collapse" role="tabpanel" aria-labelledby="heading-K">
+                        <div class="card-body">
+                          [Tab content K]
+                        </div>
+                      </div>
+                    </div><!--pane-K-->
+
+                    <div id="pane-L" class="card tab-pane  scrollableTabs scrollbar fade show" role="tabpanel" aria-labelledby="tab-L">
+                      
+                      <div id="collapse-L" class="collapse" role="tabpanel" aria-labelledby="heading-L">
+                        <div class="card-body">
+                          [Tab content L]
+                        </div>
+                      </div>
+                    </div><!--pane-L-->
+
+                  </div>
+                </div>
+                <!--tabs-->
+                  <div class="btn_group pt-60">                  
+                    <button class="govuk-button blue_button button_disabled" data-module="govuk-button" disabled>Save Changes</button>
+                  </div>
+                </div>
+                <div class="govuk-grid-column-one-third pt-30">        
+                  <div class="request_box mt-30">                
+                    <h4>Are there other compliances that might apply to your business that are not listed above ?</h4>
+                    <p>If yes, please request those compliances so our team can update the database.</p>
+                    <a href="compliances_request.html" class="govuk-button blue_button" data-module="govuk-button">Request Missing Compliance</a> 
+                  </div>                   
+                </div>                 
+              </div><!--/row-->
+            </main>
+          </div><!-- app-pane__content-->        
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------popup---------- -->
+    <div id="add_person" class="popup_big small_form_popup">
+      <a href="#" class="close">&times;</a>
+        <h2>Add Personnel</h2>
+        <form id="change_pwd_form" method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Personnel Type
+            </label>
+            <div class="select_wrapper">
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="" selected>Choose</option>
+              <option value="">Admin</option>
+              <option value="">Manager</option>
+              <option value="">External</option>                    
+            </select>
+          </div>
+          </div>
+          
+          <div class="govuk-form-group no_error">
+            <label class="govuk-label" for="sort">
+              First Name
+            </label>
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+          </div>
+          <div class="govuk-form-group no_error">
+            <label class="govuk-label" for="sort">
+              Last Name
+            </label>
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+          </div>
+          
+          <div class="govuk-form-group popup_btns">
+            <button type="submit" class="govuk-button blue_button" data-module="govuk-button">Add Personnel</button>
+          </div>
+        </form>
+    </div>
+    <a href="#" class="close-popup_big"></a>
+
+    <!-- ---------popup---------- -->
+    <div id="add_kyc" class="popup">
+      <a href="#" class="close">&times;</a>
+      <h2>Add KYC Document: %Doc_name_here</h2>
+
+      <div class="govuk-form-group mb-0">
+          <label class="govuk-label" for="sort">
+              Upload File             
+          </label>
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+      <hr>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+                Issued On                
+            </label>
+            <input type="date" name="">
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+                Expires On              
+            </label>
+            <input type="date" name="">
+          </div>
+        </div>
+      </div>
+      <div class="govuk-form-group popup_btns">
+        <button class="govuk-button blue_button" data-module="govuk-button">Add KYC Document</button>
+      </div>
+    </div>
+    <a href="#" class="close-popup"></a>
+
+    <!-- ----------popup2---------- -->
+    <div id="add_din" class="popup2">
+      <a href="#" class="close">&times;</a>
+      <h2>Add KYC Info</h2>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+            DIN/DPIN
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+      </div>
+      <div class="govuk-form-group popup_btns">
+        <button class="govuk-button blue_button" data-module="govuk-button">Add KYC Info</button>
+      </div>
+    </div>
+    <a href="#" class="close-popup2"></a>
+
+    
+    <script src="../assets/javascripts/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+    <script type="text/javascript">
+      $('#tabs').tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+    </script>
+    <script>
+         if ( $('[type="date"]').prop('type') != 'date' ) {
+          $('[type="date"]').datepicker({
+          dateFormat:'yy-mm-dd',
+          changeMonth:true,
+          changeYear:true,
+          yearRange:"-100:+0",
+          });
+        
+      }
+    </script>
+  </body>
+</html>

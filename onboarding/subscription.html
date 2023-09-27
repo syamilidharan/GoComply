@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body on_boarding">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+            <span class="select_wrapper_2">
+              <select class="govuk-select head_company_list" id="sort" name="sort">
+                <option value="" >All</option>
+                <option value="" selected>Momentum Tech Ltd</option>
+                <option value="">Company 2</option>
+                <option value="">Company 3</option>
+                <option value="">Company 4</option>                      
+              </select>
+            </span>
+          </div>
+          
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                   
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="govuk-clearfix appmain-content white_head_section pt-0 pb-0">
+        <div class="new-width-container app-prose-scope app-pane__body">
+          <div class="app-pane__subnav ">
+            <nav class="app-subnav">          
+              <ul class="app-subnav__section">              
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="welcome.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Welcome</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Profile</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="users.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Manage Users</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="gst.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> GST Details</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="business_info.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Business Info</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="company_docs.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Company Docs</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="kyc.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> KYC</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="compliances.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Compliances</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="notifications.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg>  Notifications</a>
+                </li>
+                <hr>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="billing.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Billing</a>
+                </li>
+                <li class="app-subnav__section-item app-subnav__section-item--current">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="subscription.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Subscription</a>
+                </li>
+              </ul>     
+            </nav>            
+          </div><!--/app-pane__subnav-->   
+          <div class="app-pane__content">
+            <main id="main-content" class="app-content" role="main">
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-full  pt-30 pr_80">
+                  <h3 class="sub_head">Account Setup</h3>
+                  <div class=" head_with_button">
+                    <h2 class="inner_head">Subscription</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-grid-row m-0 users_list_link mb-30">
+                <div class="govuk-grid-column-one-third pt-30">           
+                  <div class="request_box billing_box mt-30">                
+                    <h4>Professional Plan</h4>
+                    <p><strong>Rs 17,999*</strong></p>
+                    <p><span>*18% GST Extra</span></p>
+                    <a href="upgrade.html" >Change Plan</a> 
+                  </div>  
+                </div>   
+                <div class="govuk-grid-column-one-third pt-30">           
+                  <div class="request_box billing_box mt-30">                
+                    <h4>Users</h4>
+                    <p><strong>3 / 5</strong></p>
+                    <p><span>&nbsp;</span></p>
+                    <a href="upgrade.html" >Add More Users</a> 
+                  </div> 
+                </div>             
+                <div class="govuk-grid-column-one-third pt-30">           
+                  <div class="request_box billing_box mt-30">                
+                    <h4>Storage</h4>
+                    <p><strong>0.50 / 2.00 GB</strong></p>
+                    <p><span>&nbsp;</span></p>
+                    <a href="upgrade.html" >Add More Storage</a> 
+                  </div> 
+                </div>
+              </div><!--/row-->
+              <div class="govuk-grid-row m-0 users_list_link">
+                <div class="govuk-grid-column-full pt-30 plan_list">
+                  <h4 class="inner_sub_head">Your plan includes</h4>
+                  <ul>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Compliance Dashboard
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Auto generated list of compliances by company type and business type
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Coverage for GST, ROC, Income Tax, TDS, FEMA, ESIC, EPF, IEC, Factories Act and others
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Ability to create event based compliances
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Digital archive for company registers
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Email and SMS reminders for upcoming compliances.
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Access to external professionals like CAs, CS, Tax Consultants, Angel Investors etc
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Regular compliance updates
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Manage statutory notices, responses and assessments
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> All company registration documents archive
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Priority Email Support
+                    </li>
+                    <li>
+                      <svg id="done-check.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M16,0,5,11,0,6" transform="translate(4 6.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg> Manage multiple companies (additional licenses required)
+                    </li>
+                  </ul>
+                  <p><a href="#cancel_subscription">Cancel Subscription</a></p>
+                </div>
+              </div><!--/row-->
+              
+            </main>
+          </div><!-- app-pane__content-->        
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------popup2---------- -->
+    <div id="cancel_subscription" class="popup2">
+      <div class="password_change ">
+        <h2>Cancel Subscription</h2>
+        <p>We know circumstances can sometimes change. But before you go, do you want to schedule a free online consultation call with a compliance expert ?</p>
+        <div class="btn_group pt-30">
+          <div class="btn_group_1">                  
+            <a href="upgrade_payment_ok.html#pymt_success" class="govuk-button blue_button mb-0" data-module="govuk-button">Book a free consultation</a>
+          </div>
+        </div>
+        <p class="mt_30"><a href="#">Cancel my subscription anyway</a></p>
+      </div>
+    </div>
+    <a href="#" class="close-popup2"></a>
+
+    <script src="../assets/javascripts/jquery.js"></script>
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+  </body>
+</html>

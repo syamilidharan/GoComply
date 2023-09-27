@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body on_boarding">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+            <span class="select_wrapper_2">
+              <select class="govuk-select head_company_list" id="sort" name="sort">
+                <option value="" >All</option>
+                <option value="" selected>Momentum Tech Ltd</option>
+                <option value="">Company 2</option>
+                <option value="">Company 3</option>
+                <option value="">Company 4</option>                      
+              </select>
+            </span>
+          </div>
+          
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                   
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="govuk-clearfix appmain-content white_head_section pt-0 pb-0">
+        <div class="new-width-container app-prose-scope app-pane__body">
+          <div class="app-pane__subnav ">
+            <nav class="app-subnav">          
+              <ul class="app-subnav__section">              
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="welcome.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Welcome</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Profile</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="users.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Manage Users</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="gst.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> GST Details</a>
+                </li>
+                <li class="app-subnav__section-item app-subnav__section-item--current">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="business_info.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#1D70B8"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Business Info</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="company_docs.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"> <rect id="Rectangle" width="16" height="16" rx="8" fill="#ddd"/></svg> Company Docs</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="kyc.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#f47738"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> KYC</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="compliances.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#f47738"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Compliances</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="notifications.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_1" data-name="Group 1" transform="translate(-32 -128)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 128)" fill="#f47738"/><path id="Path" d="M.333,3.333V0" transform="translate(39.667 133)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-2" data-name="Path" d="M.333.167A.167.167,0,1,0,.5.333.166.166,0,0,0,.333.167" transform="translate(39.667 138.5)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Notifications</a>
+                </li>
+                <hr>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="billing.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Billing</a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="subscription.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><g id="Group_2" data-name="Group 2" transform="translate(-32 -88)"><rect id="Rectangle" width="16" height="16" rx="8" transform="translate(32 88)" fill="#00703c"/><path id="Path" d="M8,0,2.5,5.5,0,3" transform="translate(36 93.25)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></svg> Subscription</a>
+                </li>
+              </ul>     
+            </nav>            
+          </div><!--/app-pane__subnav-->  
+          <div class="app-pane__content">
+            <main id="main-content" class="app-content" role="main">
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-two-thirds pt-30 pr_80">
+                  <h3 class="sub_head">Account Setup</h3>
+                  <h2 class="inner_head">Business Info</h2>
+                  <p>Share basic details about your business.</p>
+                </div>
+              </div>
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-one-half pt-30">           
+                  <fieldset class="govuk-fieldset profile_form">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">Company Name
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="Momentum Tech Ltd">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">Company Website
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="mtltd.com">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">Company Phone
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="0800 1234 56 78">
+                    </div>
+                    <div class="govuk-form-group">
+
+                    <div class="avatar-upload logo_upload ml-0">
+                      <label class="govuk-label" for="address-line-2">Company Logo</label>
+                      <p class="input_info"><span class="tooltip" data-tooltip="jpg, jpeg, png files are supported"><svg id="question" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M9,18H9A9,9,0,0,1,0,9H0A9,9,0,0,1,9,0H9a9,9,0,0,1,9,9h0A9,9,0,0,1,9,18Z" transform="translate(3 3)" fill="#0b0c0c" stroke="#0b0c0c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M2,5.417v-.25a1.873,1.873,0,0,1,1.011-1.6A1.837,1.837,0,0,0,4,2,2,2,0,0,0,0,2" transform="translate(10 7.833)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-4" data-name="Path" d="M.5.25A.25.25,0,1,0,.75.5.249.249,0,0,0,.5.25" transform="translate(11.5 15.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg></span> What files are supported ?</p>
+                      <div class="avatar-preview">
+                          <div id="imagePreview" >
+                          </div>
+                      </div>
+                      <div class="avatar-edit">
+                          <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                          <label for="imageUpload">Upload Photo</label>
+                      </div>
+                    </div>
+                  </div>                    
+                </div><!--col-1-->                        
+              </div><!--/row-->
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-full">  
+                  <hr>
+                </div>
+              </div>
+              <div class="govuk-grid-row m-0">
+                <div class="govuk-grid-column-two-thirds">  
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h3 class="govuk-fieldset__heading">
+                          What is the nature of your business ?
+                        </h3>
+                      </legend>
+                      <div id="waste-hint" class="govuk-hint">
+                        Check all that apply
+                      </div>
+                      <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste">
+                            Trading - You buy from a vendor or manufacture and sell to your customer or other business
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Manufacturing - You have one or more factories 
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                            Services - You provide services like consulting, software development, AMC etc.
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-4" name="waste" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-4">
+                            F&B - You sell packaged or prepared food in an establishment
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-5" name="waste" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-5">
+                            Import/Export - You import goods from outside India directly or Export goods outside India
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-6" name="waste" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-6">
+                            Foreign investments - You have foreign investments in your company
+                          </label>
+                        </div>
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="sort">
+                            Your Registered Office Address <span class="tooltip" data-tooltip="Address"><svg id="question" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M9,18H9A9,9,0,0,1,0,9H0A9,9,0,0,1,9,0H9a9,9,0,0,1,9,9h0A9,9,0,0,1,9,18Z" transform="translate(3 3)" fill="#0b0c0c" stroke="#0b0c0c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M2,5.417v-.25a1.873,1.873,0,0,1,1.011-1.6A1.837,1.837,0,0,0,4,2,2,2,0,0,0,0,2" transform="translate(10 7.833)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-4" data-name="Path" d="M.5.25A.25.25,0,1,0,.75.5.249.249,0,0,0,.5.25" transform="translate(11.5 15.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg></span> 
+                        </label>
+                        <div class="select_wrapper">
+                        <select class="govuk-select" id="sort" name="sort">
+                            <option value="" selected>Choose</option>
+                            <option value="">
+                                Basement, H-1555, Chittaranjan Park,<br>
+                                New Uttar Pradesh, South Uttar Pradesh,<br>
+                                Uttar Pradesh, 110019
+                            </option>
+                            <option value="">
+                                Basement, H-1555, Chittaranjan Park,<br>
+                                New Uttar Pradesh, South Uttar Pradesh,<br>
+                                Uttar Pradesh, 110019
+                            </option>                   
+                        </select>
+                      </div>
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="sort">
+                            Your Head Office Address <span class="tooltip" data-tooltip="Address"><svg id="question" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M9,18H9A9,9,0,0,1,0,9H0A9,9,0,0,1,9,0H9a9,9,0,0,1,9,9h0A9,9,0,0,1,9,18Z" transform="translate(3 3)" fill="#0b0c0c" stroke="#0b0c0c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M2,5.417v-.25a1.873,1.873,0,0,1,1.011-1.6A1.837,1.837,0,0,0,4,2,2,2,0,0,0,0,2" transform="translate(10 7.833)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-4" data-name="Path" d="M.5.25A.25.25,0,1,0,.75.5.249.249,0,0,0,.5.25" transform="translate(11.5 15.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg></span> 
+                        </label>
+                        <div class="govuk-checkboxes__item mb-30">
+                          <input class="govuk-checkboxes__input" id="address" name="address" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="address">
+                            Same as registered office address
+                          </label>
+                        </div>
+                        <div class="select_wrapper">
+                        <select class="govuk-select" id="sort" name="sort">
+                            <option value="" selected>Choose</option>
+                            <option value="">
+                                Basement, H-1555, Chittaranjan Park,<br>
+                                New Uttar Pradesh, South Uttar Pradesh,<br>
+                                Uttar Pradesh, 110019
+                            </option>
+                            <option value="">
+                                Basement, H-1555, Chittaranjan Park,<br>
+                                New Uttar Pradesh, South Uttar Pradesh,<br>
+                                Uttar Pradesh, 110019
+                            </option>                   
+                        </select>
+                      </div>
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="address-line-2">Number of Manufacturing Units/Factories
+                        </label>
+                        <input class="govuk-input" id="address-line-2" name="address-line-2" type="number" value="3">
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="sort">
+                            Your Manufacturing Unit Addresses 
+                        </label>
+                        <div class="select_group select_span">
+                          <span>1</span>
+                          <div class="select_wrapper">
+                          <select class="govuk-select" id="sort" name="sort">
+                              <option value="" selected>Choose</option>
+                              <option value="">
+                                  Basement, H-1555, Chittaranjan Park,
+                              </option>
+                              <option value="">
+                                  Basement, H-1555, Chittaranjan Park,
+                              </option>                   
+                          </select>
+                        </div>
+                        </div>
+                        <div class="select_group select_span">
+                          <span>2</span>
+                          <div class="select_wrapper">
+                          <select class="govuk-select" id="sort" name="sort">
+                              <option value="" selected>Choose</option>
+                              <option value="">
+                                  New Uttar Pradesh, South Uttar Pradesh,
+                              </option>
+                              <option value="">
+                                  New Uttar Pradesh, South Uttar Pradesh,
+                              </option>                   
+                          </select>
+                        </div>
+                        </div>
+                        <div class="select_group select_span">
+                          <span>3</span>
+                          <div class="select_wrapper">
+                          <select class="govuk-select" id="sort" name="sort">
+                              <option value="" selected>Choose</option>
+                              <option value="">
+                                  Uttar Pradesh, 110019
+                              </option>
+                              <option value="">
+                                  Uttar Pradesh, 110019
+                              </option>                   
+                          </select>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="address-line-2">Number of Employees on Payroll
+                        </label>
+                        <input class="govuk-input" id="address-line-2" name="address-line-2" type="number" value="30">
+                      </div>
+                      <div class="govuk-form-group turn_over">
+                        <label class="govuk-label" for="sort">
+                            Last 3 years turnover
+                        </label>
+                        <div class="span_input_group">
+                          <span>2020 - 21</span>
+                          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="0.00">
+                        </div>
+                        <div class="span_input_group">
+                          <span>2019 - 20</span>
+                          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="0.00">
+                        </div>
+                        <div class="span_input_group">
+                          <span>2018 - 19</span>
+                          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" placeholder="0.00">
+                        </div>
+                      </div>
+
+                      <div class="btn_group">                  
+                        <button class="govuk-button blue_button button_disabled" data-module="govuk-button" disabled>Save Changes</button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div><!-- app-pane__content-->        
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- ---------popup---------- -->
+    <div id="change_pwd" class="popup">
+      <a href="#" class="close">&times;</a>
+        <h2>Change Password</h2>
+        <form id="change_pwd_form" method="post" action="profile_password_ok.html#pwd_ok">
+          <div class="govuk-form-group no_error">
+            <label class="govuk-label" for="sort">
+              Current Password
+            </label>
+            <span>Current Password is wrong.</span>
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="password">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              New Password
+            </label>
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="password">
+          </div> 
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Confirm Password
+            </label>
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="password">
+          </div> 
+          <div class="govuk-form-group popup_btns">
+            <button type="submit" class="govuk-button blue_button" data-module="govuk-button">Change</button>
+            <button class="govuk-button black_button right_button" data-module="govuk-button">Cancel</button>
+          </div>
+        </form>
+    </div>
+    <a href="#" class="close-popup"></a>
+
+    <!-- ---------popup2---------- -->
+    <div id="varify_mob" class="popup2">
+      <a href="#" class="close">&times;</a>
+      <div class="password_change">
+        <h2>Verify Mobile Number</h2>
+        <p>We've just sent you an SMS containing a verification code to confirm your phone number. Please enter the code below.</p>
+        <form id="varify_mob_form" method="post" action="varify_ok.html#varify_ok">
+          <div class="govuk-form-group mb-0">
+            <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">            
+          </div>          
+          <p>Verification codes expire in 5 minutes.</p>
+          <div class="govuk-form-group popup_btns">
+            <button type="submit" class="govuk-button blue_button" data-module="govuk-button">Verifiy</button>
+            <button class="govuk-button black_button right_button" data-module="govuk-button">Send New Code</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <a href="#" class="close-popup2"></a>
+    <script src="../assets/javascripts/jquery.js"></script>
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+    <script type="text/javascript">
+      function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function() {
+            readURL(this);
+        });
+    </script>
+  </body>
+</html>

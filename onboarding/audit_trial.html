@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GoComply Super Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      
+
+    <meta name="robots" content="noindex, nofollow">
+    <!--[if !IE 8]><!-->
+      <link href="../assets/css/govuk-frontend.css" rel="stylesheet" media="all">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link href="/stylesheets/main-ie8-8c441f97ce4a0eb2db3c8320da510579.css" rel="stylesheet" media="all">
+      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+    <![endif]-->
+
+    <link href="../assets/css/custom.css" rel="stylesheet" media="all">
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <script src="../assets/javascripts/vendor/modernizr.js"></script> 
+  </head>
+  <body class="govuk-template__body on_boarding">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <div class="app-pane app-pane--enabled" id="top">
+      <header class="govuk-header  app-header" role="banner" data-module="govuk-header">
+        <div class="govuk-header__container app-width-container app-header__container">
+          <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+              <span class="govuk-header__logotype">              
+                <span class="govuk-header__logotype-text ">
+                  GoComply
+                </span>
+              </span>
+            </a>
+              <span class="select_wrapper_2">
+              <select class="govuk-select head_company_list" id="sort" name="sort">
+                <option value="" >All</option>
+                <option value="" selected>Momentum Tech Ltd</option>
+                <option value="">Company 2</option>
+                <option value="">Company 3</option>
+                <option value="">Company 4</option>                      
+              </select>
+            </span>
+          </div>
+          
+          <div class="govuk-header__content">
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" aria-expanded="false">Menu</button>
+            <nav class="menu_nav">
+              <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+                   
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" href="#4">
+                          <svg id="power-appliances-shutdown" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path" d="M0,0H24V24H0Z" fill="none"/><path id="Path-2" data-name="Path" d="M13.657,0A8,8,0,1,1,2.343,0" transform="translate(4 6.343)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/><path id="Path-3" data-name="Path" d="M.5,0V8" transform="translate(11.5 4)" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                        </a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="govuk-clearfix appmain-content white_head_section pt-0">
+        <div class="app-width-container app-prose-scope">
+          <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-two-thirds pt-30">
+              <h2 class="inner_head">Audit Trail</h2>
+              <div class="govuk-breadcrumbs breadcrumbs">
+                <ol class="govuk-breadcrumbs__list">
+                  <li class="govuk-breadcrumbs__list-item">
+                    <a class="govuk-breadcrumbs__link" href="#">Admin</a>
+                  </li>
+                  <li class="govuk-breadcrumbs__list-item">
+                    <a class="govuk-breadcrumbs__link" href="#">Manage Users</a>
+                  </li>
+                  <li class="govuk-breadcrumbs__list-item">
+                    <a class="govuk-breadcrumbs__link" href="#">Audit Trail</a>
+                  </li>
+                </ol>
+              </div>
+              <h3 class="sub_head">User Details</h3>
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Name</td>
+                    <td class="govuk-table__cell">Matthew Donovan</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Email</td>
+                    <td class="govuk-table__cell">matt.donovan@service.com</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Level of Access</td>
+                    <td class="govuk-table__cell">Manager / Billing Admin</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Last Seen On</td>
+                    <td class="govuk-table__cell">24 Sep 2020    3:20 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              
+              <div class="pt-5per">
+                <button class="govuk-button black_button" data-module="govuk-button">Go Back</button>
+              </div>
+            </div><!--col-1-->
+            <div class="govuk-grid-column-one-third">
+              <div class="chat_box">
+                <div class="chat_box_header">                  
+                    <h3 class="sub_head">Activity</h3>
+                </div>
+                <div class="chat_box_body scrollbar">
+                  <div class="inner_chat_box_body">                    
+                    <h4><span>Markus L.</span> on 28/09/2020  11:30 AM</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a leo id libero luctus cursus. Integer sed bibendum mi. Aliquam erat volutpat. Nam id diam facilisis.</p>
+
+                    <hr>
+                    <h4><span>Markus L.</span> on 28/09/2020  11:25 AM</h4>
+                    <p>File uploaded: TDS_Receipts.pdf</p>
+
+                    <hr>
+                    <h4><span>Markus L.</span> on 28/09/2020  11:20 AM</h4>
+                    <p>File uploaded: Yearly_Calculations.xlsx</p>
+
+                    <hr>
+                    <h4><span>Markus L.</span> on 28/09/2020  11:14 AM</h4>
+                    <p>Assigned: Username to take care of this assignment.</p>
+
+                    <hr>
+                    <h4><span>Markus L.</span> on 28/09/2020  11:14 AM</h4>
+                    <p>Assigned: Username to take care of this assignment.</p>
+                  </div>
+                </div> 
+                <div class="chat_box_footer">
+                  <div class="govuk-form-group mb-0 show_more">
+                    <hr>
+                      <a href="#">show more</a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div><!--/row-->
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="../assets/javascripts/govuk-frontend.js"></script>
+  </body>
+  </html>
+
